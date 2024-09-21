@@ -1,0 +1,192 @@
+[
+  {
+    "title": "prod",
+    "price": 100,
+    "id": "f2c7b02a2da230f5962293b3"
+  },
+  {
+    "title": "prod",
+    "price": 100,
+    "id": "5eeeea40b951ff85c843288c"
+  },
+  {
+    "title": "prod",
+    "price": 100,
+    "id": "f0c4f01e6e0dd58779ad7502"
+  },
+  {
+    "title": "prod",
+    "price": 100,
+    "id": "8b21d28d92b20a2ca6bcad41"
+  },
+  {
+    "title": "prod",
+    "price": 100,
+    "id": "91f14c2de7024ae14880b662"
+  },
+  {
+    "title": "prod",
+    "price": 100,
+    "id": "d5aaa3e065a0396b3d738935"
+  },
+  {
+    "title": "prod",
+    "price": 100,
+    "id": "6fff6208a23a5a766eab5112"
+  },
+  {
+    "title": "prod",
+    "price": 100,
+    "id": "a8a9b0b5507c8bc56043b369"
+  },
+  {
+    "title": "t-shirt",
+    "price": "10",
+    "quantity": "2000",
+    "id": "1d53859e70ee8a370189c496"
+  },
+  {
+    "title": "short",
+    "price": "100",
+    "quantity": "200",
+    "id": "051e5950b69b1e5899787ca2"
+  },
+  {
+    "title": "zapato",
+    "price": "100",
+    "quantity": "200",
+    "id": "33f3f0656e65c8b39816e2fa"
+  },
+  {
+    "title": "zapato",
+    "price": "100",
+    "quantity": "200",
+    "category": "shoes",
+    "id": "a707b4aabca198bfb8a7dbf0"
+  },
+  {
+    "title": "zapatillas",
+    "price": "100",
+    "quantity": "200",
+    "category": "shoes",
+    "id": "3ff63b23b1c7c1b38261576e"
+  },
+  {
+    "title": "zapatillas",
+    "price": "100",
+    "quantity": "200",
+    "category": "shoes",
+    "supplier": "nike",
+    "id": "695b020be9b40729abb2b1e4"
+  },
+  {
+    "title": "zapatillas",
+    "price": "100",
+    "quantity": "200",
+    "supplier": "nike",
+    "id": "224e317837681c52bc9a1e4e"
+  },
+  {
+    "title": "mouse",
+    "price": "100",
+    "quantity": "200",
+    "category": "computers",
+    "supplier": "nike",
+    "id": "465f2244607834fe202c54dc"
+  },
+  {
+    "title": "mouse",
+    "price": "100",
+    "quantity": "200",
+    "category": "none",
+    "supplier": "none",
+    "id": "ff586bcdb1023818e2d4d659"
+  },
+  {
+    "title": "mouse",
+    "price": "100",
+    "quantity": "200",
+    "category": "none",
+    "supplier": "logitech",
+    "id": "8c76442e0c0ba713e2bf25dd"
+  },
+  {
+    "title": "mouse",
+    "price": "100",
+    "quantity": "200",
+    "category": "computers",
+    "supplier": "none",
+    "id": "55ab3870f46690df2618e6f4"
+  },
+  {
+    "title": "mouse",
+    "price": "100",
+    "quantity": "200",
+    "category": "computers",
+    "supplier": "sfx",
+    "id": "109add42dd56cc936d1ea570"
+  },
+  {
+    "title": "mouse",
+    "price": "100",
+    "quantity": "200",
+    "id": "55c19a3598d09c7cc1e048b0"
+  },
+  {
+    "title": "product from postman",
+    "price": 19,
+    "stock": 2525,
+    "id": "92fa8e2b9d59883d32991de1",
+    "category": "computers"
+  },
+  {
+    "title": "product from postman",
+    "price": 1000,
+    "stock": 10,
+    "id": "6ad9139e776b5e3a9e9cf857"
+  },
+  {
+    "title": "product from postman",
+    "price": 1000,
+    "stock": 10,
+    "id": "517081d07745b3ad9ce55784"
+  },
+  {
+    "title": "product from postman",
+    "price": 1000,
+    "stock": 10,
+    "id": "8ac3c2b96fc46aa31e20cdcc"
+  },
+  {
+    "title": "product from postman",
+    "price": 1000,
+    "stock": 10,
+    "id": "cce85ef59a633302d3d5ee1a"
+  },
+  {
+    "hola": "chau",
+    "id": "c7af1cb14fc2f697cad5520e"
+  },
+  {
+    "producto": "nada que ver",
+    "id": "70566a9d8abfb4ea59e54104"
+  },
+  {
+    "title": "title 1",
+    "stock": 100,
+    "price": 10,
+    "id": "bd54e0395d80887177835ada"
+  },
+  {
+    "title": "title 1",
+    "stock": 100,
+    "price": 10,
+    "id": "d3bb340654cb887a65448a88"
+  },
+  {
+    "title": "title 1",
+    "stock": 100,
+    "price": 10,
+    "id": "4b9d298b0a2d5dbf3d2b0650"
+  }
+]
