@@ -6,6 +6,7 @@ class ProductsManager {
     this.path = path;
     this.exists();
   }
+
   exists() {
     // 0. apenas se crea la instancia se tiene que verificar si existe o no existe el archivo
     // si no existe, hay que crearlo con un array vacío
@@ -17,6 +18,8 @@ class ProductsManager {
       console.log("file already exists");
     }
   }
+
+  // Método para leer todos los productos
   async readAll(category) {
     try {
       const data = await fs.promises.readFile(this.path, "utf-8");
@@ -35,6 +38,8 @@ class ProductsManager {
       throw error;
     }
   }
+
+  // Método para leer un producto
   async read(id) {
     try {
       const all = await this.readAll();
@@ -46,6 +51,8 @@ class ProductsManager {
       throw error;
     }
   }
+
+  // Método para crear un producto
   async create(data) {
     try {
       data.id = crypto.randomBytes(12).toString("hex");
@@ -60,6 +67,7 @@ class ProductsManager {
     }
   }
 
+  // Método para actualizar un producto
   async update(id, newData) {
     try {
       const all = await this.readAll();
