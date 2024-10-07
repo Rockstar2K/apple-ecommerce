@@ -1,274 +1,338 @@
 [
- {
-  "title": "Shorts",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "pants",
-  "price": 20,
-  "stock": 18,
-  "id": "7a60f2cd951ba4f21f02cc0d"
- },
- {
-  "title": "Sweater",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "sweaters",
-  "price": 35,
-  "stock": 10,
-  "id": "1cb953d44a5b30f6c62ae87c"
- },
- {
-  "title": "Dress",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "dresses",
-  "price": 40,
-  "stock": 7,
-  "id": "b2554efc8d268d340c14e198"
- },
- {
-  "title": "Scarf",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": 8,
-  "stock": 30,
-  "id": "7ac859778e29ba64d8018269"
- },
- {
-  "title": "Gloves",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": 12,
-  "stock": 40,
-  "id": "88ed340796f72277a87f7b8c"
- },
- {
-  "title": "Blouse",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "tops",
-  "price": 28,
-  "stock": 14,
-  "id": "02e4a6906f6403b4d4fc1193"
- },
- {
-  "title": "Tank Top",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "tops",
-  "price": 15,
-  "stock": 16,
-  "id": "f8ed1d82ae7c088dfa94a2c7"
- },
- {
-  "title": "Leggings",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "pants",
-  "price": 22,
-  "stock": 18,
-  "id": "9f6a9ec68626e542588f013d"
- },
- {
-  "title": "Boots",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "shoes",
-  "price": 60,
-  "stock": 10,
-  "id": "d5e7cade9bd5fdadd0b999de"
- },
- {
-  "title": "Skirt",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "skirts",
-  "price": 22,
-  "stock": 12,
-  "id": "2db619e1fa7a51910175f53b"
- },
- {
-  "title": "Polo Shirt",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "t-shirts",
-  "price": 18,
-  "stock": 14,
-  "id": "f7dac1c357c2bf91e5a91c25"
- },
- {
-  "title": "Belt",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": 15,
-  "stock": 25,
-  "id": "fc10ce01283012cc0e87db55"
- },
- {
-  "title": "Watch",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": 80,
-  "stock": 5,
-  "id": "078c60b5fe61bcbfefe401b1"
- },
- {
-  "title": "Sunglasses",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": "252",
-  "stock": "30",
-  "id": "671a0c8ebdfea17c98e938b3"
- },
- {
-  "title": "Tie",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": 15,
-  "stock": 20,
-  "id": "d9826ca927fbdd0d7c590bb5"
- },
- {
-  "title": "Suit",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "jackets",
-  "price": 120,
-  "stock": 3,
-  "id": "ff0db544d6717227ba5fdb84"
- },
- {
-  "title": "Sports Jacket",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "jackets",
-  "price": 70,
-  "stock": 6,
-  "id": "aec2e0589da125ea6c924e99"
- },
- {
-  "title": "Track Pants",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "pants",
-  "price": 35,
-  "stock": 10,
-  "id": "2d12617ee36093f03150c349"
- },
- {
-  "title": "Flip Flops",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "shoes",
-  "price": 15,
-  "stock": 25,
-  "id": "eb06d9101b10510ede1bfa31"
- },
- {
-  "title": "Backpack",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": 35,
-  "stock": 12,
-  "id": "f160d59b5fc40ff2e16a0fd2"
- },
- {
-  "title": "Wallet",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": 20,
-  "stock": 18,
-  "id": "23db7a930352a6533480066d"
- },
- {
-  "title": "Cardigan",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "sweaters",
-  "price": 40,
-  "stock": 8,
-  "id": "3d5a6b71fc8ac4eee876c096"
- },
- {
-  "title": "Raincoat",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "jackets",
-  "price": 55,
-  "stock": 5,
-  "id": "75264b3df221db03982e4cbc"
- },
- {
-  "title": "Cargo Pants",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "pants",
-  "price": 30,
-  "stock": 14,
-  "id": "f1db45d0d4bf749ebb451965"
- },
- {
-  "title": "V-Neck T-shirt",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "t-shirts",
-  "price": 14,
-  "stock": 20,
-  "id": "6a553297690d4d0acf13c76d"
- },
- {
-  "title": "Winter Boots",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "shoes",
-  "price": 70,
-  "stock": 10,
-  "id": "40895efe19d34969e5b278d2"
- },
- {
-  "title": "Suit Pants",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "pants",
-  "price": 45,
-  "stock": 7,
-  "id": "10dd60aabb9d736e5f898e04"
- },
- {
-  "title": "Formal Shoes",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "shoes",
-  "price": 80,
-  "stock": 6,
-  "id": "f4dececa7353fa0112038c31"
- },
- {
-  "title": "Hat",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": 22,
-  "stock": 14,
-  "id": "03971423820355f83e0ac069"
- },
- {
-  "title": "Gym Shorts",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "pants",
-  "price": 18,
-  "stock": 22,
-  "id": "d8b22bd81404c141d33de87a"
- },
- {
-  "title": "Graphic T-shirt",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "t-shirts",
-  "price": 20,
-  "stock": 18,
-  "id": "089900725e7122489a13c468"
- },
- {
-  "title": "Long Sleeve Shirt",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "tops",
-  "price": 25,
-  "stock": 12,
-  "id": "1520a9f69bb02d0197b60a26"
- },
- {
-  "title": "Long Sleeve Shirt",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "tops",
-  "price": 25,
-  "stock": 12,
-  "id": "6f3d7e7eb21825c0145dd571"
- },
- {
-  "title": "Ipad",
-  "price": "654",
-  "stock": "14",
-  "category": "iPad",
-  "photo": "/public/assets/products/products-image.webp",
-  "id": "1d49e0c4f6d44f7723b7b9fc"
- }
+  {
+    "title": "iPad",
+    "price": "999",
+    "stock": "14",
+    "category": "iPad",
+    "photo": "/public/assets/products/products-image.webp",
+    "id": "1d49e0c4f6d44f7723b7b9fc"
+  },
+  {
+    "title": "iPhone X",
+    "price": "999",
+    "stock": "7834",
+    "category": "iPhone",
+    "photo": "/public/assets/products/iphone-x.webp",
+    "id": "dded60a08e74a09c02386b01"
+  },
+  {
+    "title": "iPhone 11",
+    "price": "1099",
+    "stock": "6534",
+    "category": "iPhone",
+    "photo": "/public/assets/products/iphone-11.webp",
+    "id": "dded60a08e74a09c02386b02"
+  },
+  {
+    "title": "iPhone 12",
+    "price": "1199",
+    "stock": "5434",
+    "category": "iPhone",
+    "photo": "/public/assets/products/iphone-12.webp",
+    "id": "dded60a08e74a09c02386b03"
+  },
+  {
+    "title": "iPhone 13",
+    "price": "1299",
+    "stock": "7234",
+    "category": "iPhone",
+    "photo": "/public/assets/products/iphone-13.webp",
+    "id": "dded60a08e74a09c02386b04"
+  },
+  {
+    "title": "iPhone 14",
+    "price": "1399",
+    "stock": "8120",
+    "category": "iPhone",
+    "photo": "/public/assets/products/iphone-14.webp",
+    "id": "dded60a08e74a09c02386b05"
+  },
+  {
+    "title": "iPhone 15",
+    "price": "1499",
+    "stock": "6450",
+    "category": "iPhone",
+    "photo": "/public/assets/products/iphone-15.webp",
+    "id": "dded60a08e74a09c02386b06"
+  },
+  {
+    "title": "iPhone 16",
+    "price": "1599",
+    "stock": "5423",
+    "category": "iPhone",
+    "photo": "/public/assets/products/iphone-16.webp",
+    "id": "dded60a08e74a09c02386b07"
+  },
+  {
+    "title": "MacBook Air M1",
+    "price": "999",
+    "stock": "5342",
+    "category": "MacBook",
+    "photo": "/public/assets/products/macbook-air-m1.webp",
+    "id": "24091446c56b86c29f1b3548"
+  },
+  {
+    "title": "MacBook Air M2",
+    "price": "1199",
+    "stock": "4321",
+    "category": "MacBook",
+    "photo": "/public/assets/products/macbook-air-m2.webp",
+    "id": "24091446c56b86c29f1b3549"
+  },
+  {
+    "title": "MacBook Pro 13\" M1",
+    "price": "1299",
+    "stock": "5432",
+    "category": "MacBook",
+    "photo": "/public/assets/products/macbook-pro-13-m1.webp",
+    "id": "24091446c56b86c29f1b3550"
+  },
+  {
+    "title": "MacBook Pro 14\" M1 Pro",
+    "price": "1999",
+    "stock": "3210",
+    "category": "MacBook",
+    "photo": "/public/assets/products/macbook-pro-14-m1-pro.webp",
+    "id": "24091446c56b86c29f1b3551"
+  },
+  {
+    "title": "MacBook Pro 16\" M1 Pro",
+    "price": "2499",
+    "stock": "2100",
+    "category": "MacBook",
+    "photo": "/public/assets/products/macbook-pro-16-m1-pro.webp",
+    "id": "24091446c56b86c29f1b3552"
+  },
+  {
+    "title": "MacBook Pro 14\" M2 Pro",
+    "price": "1999",
+    "stock": "1540",
+    "category": "MacBook",
+    "photo": "/public/assets/products/macbook-pro-14-m2-pro.webp",
+    "id": "24091446c56b86c29f1b3553"
+  },
+  {
+    "title": "MacBook Pro 16\" M2 Pro",
+    "price": "2499",
+    "stock": "1234",
+    "category": "MacBook",
+    "photo": "/public/assets/products/macbook-pro-16-m2-pro.webp",
+    "id": "24091446c56b86c29f1b3554"
+  },
+  {
+    "title": "Apple Watch Series 1",
+    "price": "299",
+    "stock": "1500",
+    "category": "Apple Watch",
+    "photo": "/public/assets/products/apple-watch-series-1.webp",
+    "id": "377e5be98f836260610fce1a"
+  },
+  {
+    "title": "Apple Watch Series 2",
+    "price": "349",
+    "stock": "1200",
+    "category": "Apple Watch",
+    "photo": "/public/assets/products/apple-watch-series-2.webp",
+    "id": "377e5be98f836260610fce1b"
+  },
+  {
+    "title": "Apple Watch Series 3",
+    "price": "399",
+    "stock": "900",
+    "category": "Apple Watch",
+    "photo": "/public/assets/products/apple-watch-series-3.webp",
+    "id": "377e5be98f836260610fce1c"
+  },
+  {
+    "title": "Apple Watch Series 4",
+    "price": "449",
+    "stock": "750",
+    "category": "Apple Watch",
+    "photo": "/public/assets/products/apple-watch-series-4.webp",
+    "id": "377e5be98f836260610fce1d"
+  },
+  {
+    "title": "Apple Watch Series 5",
+    "price": "499",
+    "stock": "600",
+    "category": "Apple Watch",
+    "photo": "/public/assets/products/apple-watch-series-5.webp",
+    "id": "377e5be98f836260610fce1e"
+  },
+  {
+    "title": "Apple Watch Series 6",
+    "price": "549",
+    "stock": "500",
+    "category": "Apple Watch",
+    "photo": "/public/assets/products/apple-watch-series-6.webp",
+    "id": "377e5be98f836260610fce1f"
+  },
+  {
+    "title": "Apple Watch Series 7",
+    "price": "599",
+    "stock": "400",
+    "category": "Apple Watch",
+    "photo": "/public/assets/products/apple-watch-series-7.webp",
+    "id": "377e5be98f836260610fce1g"
+  },
+  {
+    "title": "Apple Watch Series 8",
+    "price": "649",
+    "stock": "350",
+    "category": "Apple Watch",
+    "photo": "/public/assets/products/apple-watch-series-8.webp",
+    "id": "377e5be98f836260610fce1h"
+  },
+  {
+    "title": "Apple Watch Series 9",
+    "price": "699",
+    "stock": "300",
+    "category": "Apple Watch",
+    "photo": "/public/assets/products/apple-watch-series-9.webp",
+    "id": "377e5be98f836260610fce1i"
+  },
+  {
+    "title": "AirPods (1st Generation)",
+    "price": "199",
+    "stock": "2345",
+    "category": "AirPods",
+    "photo": "/public/assets/products/airpods-1st-gen.webp",
+    "id": "926db889dacd9cf6f9dcf0f1"
+  },
+  {
+    "title": "AirPods (2nd Generation)",
+    "price": "249",
+    "stock": "3456",
+    "category": "AirPods",
+    "photo": "/public/assets/products/airpods-2nd-gen.webp",
+    "id": "926db889dacd9cf6f9dcf0f2"
+  },
+  {
+    "title": "AirPods Pro (1st Generation)",
+    "price": "249",
+    "stock": "4123",
+    "category": "AirPods",
+    "photo": "/public/assets/products/airpods-pro-1st-gen.webp",
+    "id": "926db889dacd9cf6f9dcf0f3"
+  },
+  {
+    "title": "AirPods Pro (2nd Generation)",
+    "price": "299",
+    "stock": "3789",
+    "category": "AirPods",
+    "photo": "/public/assets/products/airpods-pro-2nd-gen.webp",
+    "id": "926db889dacd9cf6f9dcf0f4"
+  },
+  {
+    "title": "AirPods Max",
+    "price": "549",
+    "stock": "2100",
+    "category": "AirPods",
+    "photo": "/public/assets/products/airpods-max.webp",
+    "id": "926db889dacd9cf6f9dcf0f5"
+  },
+  {
+    "title": "Apple TV HD",
+    "price": "149",
+    "stock": "500",
+    "category": "Apple TV",
+    "photo": "/public/assets/products/apple-tv-hd.webp",
+    "id": "55a3047d2fc814d4c37168c01"
+  },
+  {
+    "title": "Apple TV 4K (1st Generation)",
+    "price": "179",
+    "stock": "320",
+    "category": "Apple TV",
+    "photo": "/public/assets/products/apple-tv-4k-1gen.webp",
+    "id": "55a3047d2fc814d4c37168c02"
+  },
+  {
+    "title": "Apple TV 4K (2nd Generation)",
+    "price": "199",
+    "stock": "250",
+    "category": "Apple TV",
+    "photo": "/public/assets/products/apple-tv-4k-2gen.webp",
+    "id": "55a3047d2fc814d4c37168c03"
+  },
+  {
+    "title": "Apple TV 4K (3rd Generation)",
+    "price": "219",
+    "stock": "180",
+    "category": "Apple TV",
+    "photo": "/public/assets/products/apple-tv-4k-3gen.webp",
+    "id": "55a3047d2fc814d4c37168c04"
+  },
+  {
+    "title": "Apple TV 4K (Latest)",
+    "price": "249",
+    "stock": "120",
+    "category": "Apple TV",
+    "photo": "/public/assets/products/apple-tv-4k-latest.webp",
+    "id": "55a3047d2fc814d4c37168c05"
+  },
+  {
+    "title": "Cable USB-C",
+    "price": "99",
+    "stock": "645",
+    "category": "Accessories",
+    "photo": "/public/assets/products/products-image.webp",
+    "id": "f7cc38068081dec75a84250a"
+  },
+  {
+    "title": "Phone Case",
+    "price": "99",
+    "stock": "535",
+    "category": "Accessories",
+    "photo": "/public/assets/products/products-image.webp",
+    "id": "e31a66860206755177d4ec24"
+  },
+  {
+    "title": "Screen Protector",
+    "price": "29",
+    "stock": "812",
+    "category": "Accessories",
+    "photo": "/public/assets/products/screen-protector.webp",
+    "id": "b2de38068081dec75a84251b"
+  },
+  {
+    "title": "AirPods Charging Case",
+    "price": "79",
+    "stock": "230",
+    "category": "Accessories",
+    "photo": "/public/assets/products/airpods-charging-case.webp",
+    "id": "a1fe68068081dec75a84252c"
+  },
+  {
+    "title": "Lightning to 3.5 mm Adapter",
+    "price": "49",
+    "stock": "540",
+    "category": "Accessories",
+    "photo": "/public/assets/products/lightning-adapter.webp",
+    "id": "c9fe68068081dec75a84253d"
+  },
+  {
+    "title": "Apple Watch Band",
+    "price": "49",
+    "stock": "395",
+    "category": "Accessories",
+    "photo": "/public/assets/products/apple-watch-band.webp",
+    "id": "d5ef68068081dec75a84254e"
+  },
+  {
+    "title": "Wireless Charger",
+    "price": "99",
+    "stock": "220",
+    "category": "Accessories",
+    "photo": "/public/assets/products/wireless-charger.webp",
+    "id": "b6fe68068081dec75a84255f"
+  },
+  {
+    "title": "Portable Battery Pack",
+    "price": "89",
+    "stock": "400",
+    "category": "Accessories",
+    "photo": "/public/assets/products/portable-battery-pack.webp",
+    "id": "a8de68068081dec75a84256g"
+  }
 ]
