@@ -1,37 +1,5 @@
 [
  {
-  "title": "Hoodie",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "sweaters",
-  "price": 30,
-  "stock": 12,
-  "id": "6b1361be6b0176acdac96e31"
- },
- {
-  "title": "Socks",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": 15000,
-  "stock": 50,
-  "id": "856445423851c09773b52894"
- },
- {
-  "title": "Cap",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "accessories",
-  "price": 10,
-  "stock": 25,
-  "id": "65312358a1c1c81e86a01276"
- },
- {
-  "title": "Jacket",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "jackets",
-  "price": 55,
-  "stock": 8,
-  "id": "07fccd360567e0c783c29f8c"
- },
- {
   "title": "Shorts",
   "photo": "/public/assets/products/products-image.webp",
   "category": "pants",
@@ -296,11 +264,11 @@
   "id": "6f3d7e7eb21825c0145dd571"
  },
  {
-  "title": "Long Sleeve Shirt",
+  "title": "Ipad",
+  "price": "654",
+  "stock": "14",
+  "category": "iPad",
   "photo": "/public/assets/products/products-image.webp",
-  "category": "tops",
-  "price": 25,
-  "stock": 12,
-  "id": "8a689cf7e50eca24206bf14a"
+  "id": "1d49e0c4f6d44f7723b7b9fc"
  }
 ]
