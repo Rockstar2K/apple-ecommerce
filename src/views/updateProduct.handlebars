@@ -1,0 +1,38 @@
+<h1 class="text-center mb-3">Update Product</h1>
+<section class="d-block w-75 mx-auto p-4 rounded shadow-lg" style="background-color:#ffffff" id="updateProductContainer">
+<form method="PUT">
+    <div class="mb-3">
+  <label for="new-product-title" class="form-label">Title</label>
+  <input type="text" class="form-control" id="new-product-title" placeholder="Product" name="title" value={{data.title}}>
+</div>
+<div class="mb-3">
+  <label for="new-product-price" class="form-label">Price</label>
+  <input type="number" class="form-control" id="new-product-price" placeholder="Price" name="price" min="1" value={{data.price}}>
+</div>
+<div class="mb-3">
+  <label for="new-product-stock" class="form-label">Stock</label>
+  <input type="number" class="form-control" id="new-product-stock" placeholder="Stock" name="stock" min="1" value={{data.stock}}>
+</div>
+<div class="mb-3">
+  <label for="new-product-category" class="form-label">Category</label>
+  <select id="new-product-category" name="category" class="form-control">
+            <option value="{{data.category}}">{{data.category}}</option>
+            <option value="pants">pants</option>
+            <option value="shoes">shoes</option>
+            <option value="sweaters">sweaters</option>
+            <option value="accessories">accessories</option>
+            <option value="jackets">jackets</option>
+            <option value="dresses">dresses</option>
+            <option value="tops">tops</option>
+            <option value="skirts">skirts</option>
+            <option value="t-shirts">t-shirts</option>
+            <option value="other">other</option>
+          </select>
+          </div>
+    <button class="btn btn-primary" type="submit" value={{data.id}} id="updateProductBtn"> Update </button>
+</form>
+</section>
+
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script type="module" src="/public/js/updateProductSocket.js"></script>

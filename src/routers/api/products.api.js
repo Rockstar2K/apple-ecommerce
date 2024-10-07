@@ -1,22 +1,18 @@
-import { Router } from "express";
-import {
-  getAllProducts,
-  getProduct,
-  createProduct,
-  updateProduct,
-  destroyProduct,
-} from "../../controllers/products.controller.js";
-import isValidData from "../../middlewares/isValidData.mid.js";
+import { Router } from 'express';
+import { readAllProds, getProduct, create, update, deleteProd } from "../../controllers/products.controllers.js";
+import isValidData from '../../middleware/isValidData.mid.js';
 
 
-const productsRouter = Router();
+const productsApiRouter = Router()
 
-productsRouter.get("/", getAllProducts);
-productsRouter.get("/:pid", getProduct);
-productsRouter.post("/", isValidData, createProduct);
-// antes de que se ejecute createProduct
-// tiene que ejecutarse el middleware de validacion de datos (isValidData)
-productsRouter.put("/:pid", updateProduct);
-productsRouter.delete("/:pid", destroyProduct);
+productsApiRouter.get("/", readAllProds)
 
-export default productsRouter;
+productsApiRouter.get("/:pid", getProduct)
+
+productsApiRouter.post("/", isValidData, create)
+
+productsApiRouter.put("/:pid", update)
+
+productsApiRouter.delete("/:pid", deleteProd)
+
+export default productsApiRouter

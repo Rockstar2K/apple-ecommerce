@@ -1,0 +1,92 @@
+[
+ {
+  "email": "agus@gmail.com",
+  "password": "1234",
+  "photo": "/public/assets/users/user-image.jpg",
+  "role": 0,
+  "id": "509c2054b03643266daa02d4",
+  "isOnline": false,
+  "name": "Agustina"
+ },
+ {
+  "email": "martina@gmail.com",
+  "password": "abc123",
+  "photo": "/public/assets/users/user-image.jpg",
+  "role": 0,
+  "id": "835b4ca57ce20e8d6a9b739f",
+  "isOnline": false,
+  "name": "Martina"
+ },
+ {
+  "email": "fede@gmail.com",
+  "password": "1234",
+  "photo": "/public/assets/users/user-image.jpg",
+  "role": 0,
+  "id": "d9021ddf5a2efd09cf441b6c",
+  "isOnline": false,
+  "name": "Fede"
+ },
+ {
+  "email": "flor@gmail.com",
+  "password": "qwerty",
+  "photo": "/public/assets/users/user-image.jpg",
+  "role": 0,
+  "id": "f1b5f8056ceaa12c65265008",
+  "isOnline": false,
+  "name": "Florencia"
+ },
+ {
+  "email": "edu@gmail.com",
+  "password": "edward",
+  "photo": "/public/assets/users/user-image.jpg",
+  "role": 0,
+  "id": "af7fb4aff51d714b2b393e0c",
+  "isOnline": false,
+  "name": "Eduardo"
+ },
+ {
+  "email": "pedro@gmail.com",
+  "password": "aaaaaa",
+  "role": 1,
+  "photo": "/public/assets/users/user-image.jpg",
+  "id": "c95d8ddcb2b568718d633345",
+  "isOnline": false,
+  "name": "Pedro"
+ },
+ {
+  "name": "admin",
+  "email": "admin@wearcoder.com",
+  "password": "admin123",
+  "photo": "/public/assets/users/user-image.jpg",
+  "role": 0,
+  "isOnline": false,
+  "id": "bb791928b0e80f082018aaf2"
+ },
+ {
+  "name": "Federico",
+  "email": "fede@wearcoder.com",
+  "password": "123456",
+  "photo": "/public/assets/users/user-image.jpg",
+  "role": 0,
+  "isOnline": false,
+  "id": "14259db150e419348a4328fc"
+ },
+ {
+  "name": "Federico",
+  "email": "fede@asdsad.com",
+  "password": "1234",
+  "photo": "/public/assets/users/user-image.jpg",
+  "role": 0,
+  "isOnline": false,
+  "id": "7ae332528a1eb7c773691296"
+ },
+ {
+  "name": "Federico",
+  "email": "fede@wearcoder.com",
+  "password": "123123",
+  "photo": "/public/assets/users/user-image.jpg",
+  "role": 0,
+  "isOnline": false,
+  "id": "26efa66434064e85c52a06db"
+ }
+]

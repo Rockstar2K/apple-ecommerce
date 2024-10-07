@@ -1,3 +1,32 @@
-<h1>{{one.title}}</h1>
-<h3>{{one.price}}</h3>
-<h3>{{one.stock}}</h3>
+
+
+<div class="card shadow-lg mx-auto mt-4" style="width: 18rem;">
+  <img src={{data.photo}} class="card-img-top" alt={{data.title}}>
+  <div class="card-body">
+    <h5 class="card-title">{{data.title}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Price: {{data.price}}</li>
+    {{#if data.stock}}
+    <li class="list-group-item">Stock: {{data.stock}}</li>
+    {{else}}
+    <li class="list-group-item">Stock: None</li>
+    {{/if}}
+  </ul>
+  <div class="card-body">
+    <botton onclick="handleOnClick()" class="btn btn-primary">Add to cart</botton>
+  </div>
+</div>
+
+<script>
+    const handleOnClick = ()=>{
+        
+        Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Added to cart",
+        showConfirmButton: false,
+        timer: 1500
+      }); 
+    }
+</script>
