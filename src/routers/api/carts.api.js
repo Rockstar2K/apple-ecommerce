@@ -24,4 +24,9 @@ cartsApiRouter.delete('/:cid', deleteCart);
 // Add product to cart
 cartsApiRouter.post('/:cid/products/:pid', addProductToCart);
 
+
+
+// Delete product from cart
+//cartsApiRouter.post('/:cid/products/:pid', deleteProductFromCart);
+
 export default cartsApiRouter

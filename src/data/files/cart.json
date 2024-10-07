@@ -1,6 +1,11 @@
 [
   {
     "id": "ce681e77333b92ef80271c42",
-    "products": []
+    "products": [
+      {
+        "product": "67890",
+        "quantity": 3
+      }
+    ]
   }
 ]

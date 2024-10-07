@@ -21,12 +21,11 @@ async function getAllProducts(req, res, next) {
   }
 }
 
+// Gets a single product by its ID
 async function getProduct(req, res, next) {
-  // res es el objeto de respuesta a enviar al cliente
   try {
     const { pid } = req.params;
     const response = await productsManager.read(pid);
-    // response es la respuesta que se espera del manager (para leer un producto)
     if (response) {
       return res.status(200).json({ message: "PRODUCT READ", response });
     } else {
@@ -65,7 +64,6 @@ async function createGet(req, res, next) {
 async function createProduct(req, res, next) {
   try {
     const data = req.body;
-    //guardo el objeto que envia el front con los datos de lo que se necesita crear
     const responseManager = await productsManager.create(data);
     return res
       .status(201)
@@ -135,11 +133,9 @@ async function showProducts (req, res, next) {
 }
 
 async function showOneProduct(req, res, next) {
-  // res es el objeto de respuesta a enviar al cliente
   try {
     const { pid } = req.params;
     const response = await productsManager.read(pid);
-    // response es la respuesta que se espera del manager (para leer un producto)
     if (response) {
       return res.render("oneproduct", { one: response })
     } else {
