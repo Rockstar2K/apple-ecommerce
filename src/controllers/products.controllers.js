@@ -167,4 +167,4 @@ const createProductView = (req, res, next) =>{
     }
 }
 
-export { readAllProds, getProduct, create, update, deleteProd, showOneProduct, showProducts, showProductsInIndex,updateProductView, createProductView }
+export { readAllProds, getProduct, create, update, deleteProd, showOneProduct, showProducts, showProductsInIndex, updateProductView, createProductView }

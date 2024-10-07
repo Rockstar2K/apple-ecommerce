@@ -124,8 +124,8 @@ async function login (req, res) {
         email: user.email,
         role: user.role,
       };
-      const CLAVE='clave_secreta_super_segura' //Esta clave luego la moveré a una variable de entorno
-      const token = jwt.sign(payload, CLAVE, { expiresIn: '1h' });
+      const KEY='my_secret_key' //Esta clave luego la moveré a una variable de entorno
+      const token = jwt.sign(payload, KEY, { expiresIn: '1h' });
     res.cookie('token', token, {
       httpOnly: true, 
       maxAge: 3600000, 
@@ -145,7 +145,7 @@ async function getUserId(req, res){
 
     if (token) {
       try {
-        const decoded = jwt.verify(token, 'clave_secreta_super_segura');
+        const decoded = jwt.verify(token, 'my_secret_key');
         
         res.status(200).json({ userId: decoded.id });
       } catch (error) {

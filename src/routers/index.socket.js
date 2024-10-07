@@ -46,8 +46,8 @@ socket.on('login', async ({ email, password }) => {
       email: user.email,
       role: user.role,
     };
-    const CLAVE='clave_secreta_super_segura' //Esta clave luego la moveré a una variable de entorno
-    const token = jwt.sign(payload, CLAVE, { expiresIn: '1h' });
+    const KEY='my_secret_key' //Esta clave luego la moveré a una variable de entorno
+    const token = jwt.sign(payload, KEY, { expiresIn: '1h' });
 
     socket.emit('loginResponse', { success: true, token, userId: user.id });
   });
