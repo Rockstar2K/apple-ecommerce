@@ -17,7 +17,7 @@ function isValidData(req, res, next) {
             throw error
         }
         if (!photo) {
-            req.body.photo = "/public/assets/products/products-image.jpg"
+            req.body.photo = "/public/assets/products/products-image.webp"
         }
         if (!category) {
             req.body.category = "none"

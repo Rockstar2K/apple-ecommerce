@@ -9,7 +9,7 @@ document.querySelector("#createNewProductBtn").addEventListener("click", (e) => 
     const price = document.querySelector("#new-product-price").value
     const stock = document.querySelector("#new-product-stock").value
     const category = document.querySelector("#new-product-category").value
-    const photo = "/public/assets/products/products-image.jpg"
+    const photo = "/public/assets/products/products-image.webp"
     const newProductData = { title, price, stock, category, photo }
     if (!title) {
         const error = new Error("title is required")
