@@ -88,5 +88,14 @@
   "role": 0,
   "isOnline": false,
   "id": "26efa66434064e85c52a06db"
+ },
+ {
+  "name": "test",
+  "email": "test@test.com",
+  "password": "test",
+  "photo": "/public/assets/users/user-image.jpg",
+  "role": 0,
+  "isOnline": false,
+  "id": "7e71d035c2f1d20fb30ab264"
  }
 ]

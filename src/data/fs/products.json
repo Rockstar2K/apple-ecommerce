@@ -1,19 +1,4 @@
-[{
-    "title": "Jeans",
-    "photo": "/public/assets/products/products-image.webp",
-    "category": "pants",
-    "price": 25,
-    "stock": 20,
-    "id": "f9b4630a924cc1d35e2df568"
-   },
- {
-  "title": "Sneakers",
-  "photo": "/public/assets/products/products-image.webp",
-  "category": "shoes",
-  "price": 45,
-  "stock": 15,
-  "id": "bc40edd7772282526497a08a"
- },
+[
  {
   "title": "Hoodie",
   "photo": "/public/assets/products/products-image.webp",
@@ -317,13 +302,5 @@
   "price": 25,
   "stock": 12,
   "id": "8a689cf7e50eca24206bf14a"
- },
- {
-  "title": "Hat",
-  "price": "20",
-  "stock": "2",
-  "category": "other",
-  "photo": "/public/assets/products/products-image.webp",
-  "id": "c6ca1f555de87063af48b568"
  }
 ]
