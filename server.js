@@ -8,15 +8,20 @@ import __dirname from "./utils.js";
 import { Server} from "socket.io";
 import {createServer} from "http"
 import socket from "./src/routers/index.socket.js";
-import cors from "cors"
-import cookieParser from 'cookie-parser'
+import cors from "cors";
+import cookieParser from "cookie-parser";
+import "dotenv/config.js";
+import dbConnect from "./src/utils/db.util.js";
 
 
 try {
     const server = express()
     server.use(cookieParser())
-    const port = 8000;
-    const ready = () => console.log("Server ready on port: http://localhost:" + port);
+    const port = process.env.PORT || 8000;
+    const ready = async () => {
+        console.log("Server ready on port: http://localhost:" + port);
+        await dbConnect();
+    }
     const httpServer = createServer(server)
     const tcpServer = new Server(httpServer);
    

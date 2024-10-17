@@ -1,13 +1,27 @@
-import productsManager from "../data/products.manager.js"
+import productsManager from "../data/fs/products.fs.js"
+import productsMongoManager from "../data/mongo/managers/product.mongo.js";
 
-async function readAllProds(req, res, next) {
+
+async function create(req, res, next) {
+    try {
+        let data = req.body
+
+        const response = await productsMongoManager.create(data)
+        return res.status(201).json({ message: "Product created", response: response._id })
+
+    } catch (error) {
+        return next(error)
+    }
+};
+
+async function readAll(req, res, next) {
     try {
         let { category } = req.query;
         let response;
         if (!category) {
-            response = await productsManager.read()
+            response = await productsMongoManager.read()
         } else {
-            response = await productsManager.read(category)
+            response = await productsMongoManager.read(category)
         }
         if (response.length > 0) {
             return res.status(200).json({ response })
@@ -24,7 +38,7 @@ async function readAllProds(req, res, next) {
 async function getProduct(req, res, next) {
     try {
         const { pid } = req.params;
-        const response = await productsManager.readOne(pid)
+        const response = await productsMongoManager.readOne(pid)
         if (response) {
             return res.status(200).json({ response })
         } else {
@@ -38,23 +52,12 @@ async function getProduct(req, res, next) {
     }
 };
 
-async function create(req, res, next) {
-    try {
-        let data = req.body
-
-        const responseManager = await productsManager.create(data)
-        return res.status(201).json({ message: "Product created", response: responseManager })
-
-    } catch (error) {
-        return next(error)
-    }
-};
 
 async function update(req, res, next) {
     try {
         const { pid } = req.params;
         const newData = req.body;
-        const responseManager = await productsManager.update(pid, newData);
+        const responseManager = await productsMongoManager.update(pid, newData);
         if (!responseManager) {
             const error = new Error(`Product with id ${pid} doesnt exists`)
             error.statusCode = 404;
@@ -66,16 +69,16 @@ async function update(req, res, next) {
     }
 };
 
-async function deleteProd(req, res, next) {
+async function destroy(req, res, next) {
     try {
         const { pid } = req.params;
-        const responseManager = await productsManager.delete(pid);
-        if (!responseManager) {
+        const response = await productsMongoManager.delete(pid);
+        if (!response) {
             const error = new Error(`Product with id ${pid} not found`)
             error.statusCode = 404;
             throw error
         };
-        return res.status(200).json({ message: "Product deleted", response: responseManager })
+        return res.status(200).json({ message: "Product deleted", response: response })
 
     } catch (error) {
         return next(error)
@@ -87,9 +90,9 @@ async function showProducts(req,res,next){
         let { category } = req.query;
         let all;
         if(!category){
-            all = await productsManager.read()
+            all = await productsMongoManager.read()
         }else{
-            all = await productsManager.read(category)
+            all = await productsMongoManager.read(category)
         }
         if(all.length > 0){
             return res.render("products", {data: all})
@@ -109,9 +112,9 @@ async function showProductsInIndex(req,res,next){
         let { category } = req.query;
         let all;
         if(!category){
-            all = await productsManager.read()
+            all = await productsMongoManager.read()
         }else{
-            all = await productsManager.read(category)
+            all = await productsMongoManager.read(category)
         }
         if(all.length > 0){
             return res.render("index", {data: all})
@@ -130,7 +133,7 @@ async function showProductsInIndex(req,res,next){
 async function showOneProduct (req, res, next) {
     try {
         const { pid } = req.params;
-        const response = await productsManager.readOne(pid)
+        const response = await productsMongoManager.readOne(pid)
         if (response) {
             return res.render("oneProduct",{data:response})
         } else {
@@ -146,7 +149,7 @@ async function showOneProduct (req, res, next) {
 async function updateProductView (req, res, next) {
     try {
         const { pid } = req.params;
-        const response = await productsManager.readOne(pid)
+        const response = await productsMongoManager.readOne(pid)
         if (response) {
             return res.render("updateProduct",{data:response})
         } else {
@@ -167,4 +170,4 @@ const createProductView = (req, res, next) =>{
     }
 }
 
-export { readAllProds, getProduct, create, update, deleteProd, showOneProduct, showProducts, showProductsInIndex, updateProductView, createProductView }
+export { create, readAll, getProduct,  update, destroy, showOneProduct, showProducts, showProductsInIndex, updateProductView, createProductView }

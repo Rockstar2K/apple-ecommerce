@@ -1,5 +1,5 @@
-import usersManager from "../data/users.manager.js";
-import productsManager from "../data/products.manager.js"
+import usersManager from "../data/fs/users.fs.js";
+import productsManager from "../data/fs/products.fs.js"
 import jwt from 'jsonwebtoken';
 
 const socket = async (socket)=>{
