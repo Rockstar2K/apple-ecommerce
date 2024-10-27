@@ -9,9 +9,9 @@ class ProductsMongoManager {
             throw error
         }
     } 
-    async readAll(){
+    async readAll(filter){
         try {
-            const all = await Product.find()
+            const all = await Product.find(filter)
             return all
         } catch (error) {
             throw error

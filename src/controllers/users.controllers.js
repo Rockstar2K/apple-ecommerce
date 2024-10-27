@@ -1,20 +1,27 @@
 import usersManager from "../data/fs/users.fs.js"
 import jwt from 'jsonwebtoken';
+import usersMongoManager from "../data/mongo/managers/user.mongo.js";
 
-
-async function readAllUsers(req, res, next) {
+async function create(req, res, next) {
     try {
-        let { role } = req.query;
-        let response;
-        if (!role) {
-            response = await usersManager.read()
-        } else {
-            response = await usersManager.read(role)
-        }
-        if (response.length > 0) {
-            return res.status(200).json({ response })
-        } else {
-            const error = new Error("NOT FOUND")
+        const data = req.body
+
+        const response = await usersMongoManager.create(data)
+        return res.status(201).json({ message: "User created", response: response })
+
+    } catch (error) {
+        return next(error)
+    }
+};
+
+async function readAll(req, res, next) {
+    try {
+        const filter = req.query;
+        const response = response = await usersMongoManager.readAll(filter)
+        if (response){
+            return res.status(200).json({message: "PRODUCTS READ", response: response})
+        } else{
+            const error = new Error("USERS NOT FOUND")
             error.statusCode = 404;
             throw error
         }
@@ -23,12 +30,12 @@ async function readAllUsers(req, res, next) {
     }
 };
 
-async function getUser(req, res, next) {
+async function read(req, res, next) {
     try {
         const { uid } = req.params;
-        const response = await usersManager.readOne(uid)
+        const response = await usersMongoManager.read(uid)
         if (response) {
-            return res.status(200).json({ response })
+            return res.status(200).json({ message: "USER FOUND", response: response })
         } else {
             const error = new Error("USER NOT FOUND")
             error.statusCode = 404;
@@ -40,44 +47,32 @@ async function getUser(req, res, next) {
     }
 };
 
-async function create(req, res, next) {
-    try {
-        let data = req.body
-
-        const responseManager = await usersManager.create(data)
-        return res.status(201).json({ message: "User created", response: responseManager })
-
-    } catch (error) {
-        return next(error)
-    }
-};
-
 async function update(req, res, next) {
     try {
         const { uid } = req.params;
-        const newData = req.body;
-        const responseManager = await usersManager.update(uid, newData);
-        if (!responseManager) {
+        const data = req.body;
+        const response = await usersMongoManager.update(uid, data);
+        if (!response) {
             const error = new Error(`User with id ${uid} doesnt exists`)
             error.statusCode = 404;
             throw error
         }
-        return res.status(200).json({ message: "User updated", response: responseManager })
+        return res.status(200).json({ message: "User updated", response: response })
     } catch (error) {
         return next(error)
     }
 };
 
-async function deleteUser(req, res, next) {
+async function destroy(req, res, next) {
     try {
         const { uid } = req.params;
-        const responseManager = await usersManager.delete(uid);
-        if (!responseManager) {
+        const response = await usersMongoManager.delete(uid);
+        if (!response) {
             const error = new Error(`User with id ${uid} not found`)
             error.statusCode = 404;
             throw error
         };
-        return res.status(200).json({ message: "User deleted", response: responseManager })
+        return res.status(200).json({ message: "User deleted", response: response })
 
     } catch (error) {
         return next(error)
@@ -86,7 +81,7 @@ async function deleteUser(req, res, next) {
 
 const registerView = async (req, res, next) =>{
     try {
-        const users = await usersManager.read()
+        const users = await usersMongoManager.read()
         return res.render("register", {users})
     } catch (error) {
         return next(error)
@@ -96,11 +91,11 @@ const registerView = async (req, res, next) =>{
 async function profileView (req, res, next) {
     try {
         const { uid } = req.params;
-        const response = await usersManager.readOne(uid)
+        const response = await usersMongoManager.readOne(uid)
         if (response) {
             return res.render("myProfile",{data:response})
         } else {
-            const error = new Error("PRODUCT NOT FOUND")
+            const error = new Error("USEUR NOT FOUND")
             error.statusCode = 404;
             throw error
         }
@@ -114,7 +109,7 @@ async function login (req, res) {
 
     const { email, password } = req.body;
 
-    const user = await usersManager.readByEmail(email);
+    const user = await usersMongoManager.readByEmail(email);
     if (!user || password !== user.password) {
       return res.status(401).json({ success: false, message: 'Wrong credentials' });
     }
@@ -156,4 +151,4 @@ async function getUserId(req, res){
     }
 }
 
-export { readAllUsers, getUser, create, update, deleteUser, registerView, profileView, login, logout, getUserId }
+export { readAll, read, create, update, destroy, registerView, profileView, login, logout, getUserId }
