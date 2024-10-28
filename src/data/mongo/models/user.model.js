@@ -1,18 +1,14 @@
-import crypto from "crypto";
-export class User {
-  constructor(
-    email,
-    password,
-    photo = "https://random.imagecdn.app/50/50",
-    role = "registeredUser"
-  ) {
-    this.id = crypto.randomBytes(12).toString("hex");
-    this.photo = photo;
-    this.email = email;
-    this.password = password;
-    this.role = role;
-    this.isOnline = false;
-  }
-}
+import { Schema, model } from "mongoose";
 
-export default User;
+const collection = "users"
+
+const schema = new Schema({
+    name: { type: String, required: true },
+    email: { type: String, required: true, unique:true,index:true },
+    password: { type: String, required: true },
+    role: { type: String, default: "user", enum: ["user","admin"],index:true},
+    isOnline: { type: Boolean, default: "false" },
+    photo: { type: String, default: "/public/assets/users/user-image.jpg" }
+})
+const User = model(collection, schema);
+export default User

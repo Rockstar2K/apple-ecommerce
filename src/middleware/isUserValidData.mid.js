@@ -10,7 +10,7 @@ function isUserValidData(req, res, next) {
             req.body.photo = "/public/assets/users/user-image.jpg"
         }
         if (!role) {
-            req.body.role = 0
+            req.body.role = "user"
         }
         if (!isOnline) {
             req.body.isOnline = false

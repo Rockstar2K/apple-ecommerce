@@ -56,7 +56,7 @@ class Controller{
         try {
             const { id } = req.params;
             const newData = req.body;
-            const responseManager = await this.manager.update(pid, newData);
+            const responseManager = await this.manager.update(id, newData);
             if (!responseManager) {
                 const error = new Error(`${this.model} with id ${id} doesnt exists`)
                 error.statusCode = 404;
@@ -83,6 +83,27 @@ class Controller{
             return next(error)
         }
     }
+
+    //###########
+    async paginate(req, res, next) {
+        try {
+            let filter = {};
+            if (req.query.category) {
+                filter.category = req.query.category;
+            }
+            const { page, limit } = req.query
+            const response = await this.manager.paginate(filter, { page, limit })
+            if (response.docs.length > 0) {
+                return res.status(200).json({ response })
+            } else {
+                const error = new Error("NOT FOUND")
+                error.statusCode = 404;
+                throw error
+            }
+        } catch (error) {
+            return next(error)
+        }
+    };
     
   
 
