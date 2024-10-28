@@ -1,13 +1,14 @@
-import cartsMongoManger from "../data/mongo/managers/cart.manager.js";
+import cartsMongoManager from "../data/mongo/managers/cart.manager.js";
 import Controller from "./controller.js";
 
-const cartController = new Controller(cartsMongoManger, "CART")
+
+const cartController = new Controller(cartsMongoManager, "CART")
 const { create, readAll, read,  update, destroy} = cartController;
 
 async function calculateTotal(req, res, next){
     try {
-        const { uid } = req.params;
-        const response = await cartsMongoManager.calculateTotal(uid)
+        const { cid } = req.params;
+        const response = await cartsMongoManager.calculateTotal(cid)
         return res.status(200).json({response})
     } catch (error) {
         return next(error)
@@ -35,4 +36,4 @@ async function cartsView(req, res, next) {
     }
 }
 
-export { create, readAll, read,  update, destroy}
+export { create, readAll, read,  update, destroy, calculateTotal, cartsView}

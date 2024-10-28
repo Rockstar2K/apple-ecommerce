@@ -3,7 +3,7 @@ import productsMongoManager from "../data/mongo/managers/product.manager.js";
 import Controller from "./controller.js";
 
 const productsController = new Controller(productsManager, "PRODUCT")
-const { create, readAll, read,  update, destroy} = productsController;
+const { create, readAll, read,  update, destroy, paginate } = productsController;
 
 
 async function showpaginated(req, res, next) {
@@ -78,4 +78,4 @@ const createProductView = (req, res, next) => {
     }
 }
 
-export { create, readAll, read,  update, destroy}
+export { create, readAll, read,  update, destroy, paginate, showpaginated, showProductsInIndex, createProductView}

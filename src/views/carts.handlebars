@@ -1,0 +1,15 @@
+<h1>Cart</h1>
+
+<section>
+{{#each data}}
+   <div id={{this._id}} class="d-flex-col justify-content-center align-items-center">
+<ul class="list-group list-group-flush">
+        <li class="list-group-item mx-auto">
+          <a href="/products/{{this.product_id._id}}">{{this.product_id.title}}</a> 
+          price: ${{this.product_id.price}}
+        </li>
+      </ul>
+ 
+</div>
+{{/each}}
+</section>

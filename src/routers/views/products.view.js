@@ -7,8 +7,8 @@ import authMiddleware from '../../middleware/auth.mid.js';
 const productsViewRouter = Router()
 
 productsViewRouter.get("/",authMiddleware, readAll)
-//productsViewRouter.get("/admin", createProductView)
-//productsViewRouter.get("/update/:pid", updateProductView)
+productsViewRouter.get("/admin", createProductView)
+productsViewRouter.get("/update/:pid", updateProductView)
 productsViewRouter.get("/:pid", read)
 
 
