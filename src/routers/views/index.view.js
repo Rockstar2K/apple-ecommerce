@@ -1,8 +1,9 @@
 import { Router } from 'express'
-import { showProductsInIndex } from '../../controllers/products.controller.js';
 import productsViewRouter from './products.view.js';
 import usersViewRouter from './users.view.js';
 import cartsViewRouter from './carts.view.js';
+
+import { showProductsInIndex } from '../../controllers/products.controllers.js';
 
 
 const viewRouter = Router()

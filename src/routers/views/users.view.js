@@ -1,5 +1,5 @@
 import { Router } from 'express';
-//import { registerView, profileView, login, logout, getUserId } from '../../controllers/users.controllers.js';
+import { registerView, profileView, login, logout, getUserId } from '../../controllers/users.controllers.js';
 import authMiddleware from '../../middleware/auth.mid.js';
 
 

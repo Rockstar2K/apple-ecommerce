@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { readAll, read } from '../../controllers/products.controllers.js';
 import authMiddleware from '../../middleware/auth.mid.js';
+import { createProductView, updateProductView } from '../../controllers/products.controllers.js';
 
 
 

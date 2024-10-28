@@ -80,4 +80,4 @@ async function getUserId(req, res) {
 }
 
 
-export { create, readAll, read, update, destroy }
+export { create, readAll, read, update, destroy, registerView, profileView, login, logout, getUserId }

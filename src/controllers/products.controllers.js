@@ -41,7 +41,7 @@ async function showProductsInIndex(req, res, next) {
         if (all.length > 0) {
             return res.render("index", { data: all })
         } else {
-            const error = new Error("Products not found")
+            const error = new Error("PRODUCTS NOT FOUND")
             error.statusCode = 404;
             throw error
         }
@@ -78,4 +78,4 @@ const createProductView = (req, res, next) => {
     }
 }
 
-export { create, readAll, read,  update, destroy, paginate, showpaginated, showProductsInIndex, createProductView}
+export { create, readAll, read,  update, destroy, paginate, showpaginated, showProductsInIndex, createProductView, updateProductView}
