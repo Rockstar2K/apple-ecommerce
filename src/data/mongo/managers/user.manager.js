@@ -1,5 +1,5 @@
 import User from "../models/user.model.js";
-import MongoManager from "./manager.mongo.js";
+import MongoManager from "./manager.js";
 
 
 const usersMongoManager = new MongoManager(User)

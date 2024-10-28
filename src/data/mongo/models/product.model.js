@@ -12,6 +12,8 @@ const schema = new Schema({
   },
 });
 
+schema.plugin(moongosePaginator)
+
 const Product = model(collection, schema);
 
 export default Product;

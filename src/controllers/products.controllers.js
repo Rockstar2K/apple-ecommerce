@@ -1,5 +1,5 @@
 import productsManager from "../data/fs/products.fs.js"
-import productsMongoManager from "../data/mongo/managers/product.mongo.js";
+import productsMongoManager from "../data/mongo/managers/product.manager.js";
 import Controller from "./controller.js";
 
 const productsController = new Controller(productsManager, "PRODUCT")

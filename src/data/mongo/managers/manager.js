@@ -14,32 +14,39 @@ class MongoManager {
     } 
     async readAll(filter){
         try {
-            const all = await this.model.find(filter)
+            const all = await this.model.find(filter, "-__v")
             return all
         } catch (error) {
             throw error
         }
     }
-    async readOne(pid){
+    paginate = async (filter) => {
         try {
-            const one = await this.model.findById(pid)
+            const all = await this.model.paginate(filter)
+        } catch (error) {
+            throw error
+        }
+    }
+    async readOne(id){
+        try {
+            const one = await this.model.findOne({_id: id})
             return one
         } catch (error) {
             throw error
         }
     }
-    async update(pid, data){
+    async update(id, data){
         try {
             const opts = {new: true}
-            const one = await this.model.findByIdAndUpdate(pid, data, opts)
+            const one = await this.model.findOneAndUpdate({_id: id}, data, opts)
             return one
         } catch (error) {
             throw error
         }
     }
-    async destroy(pid){
+    async destroy(id){
         try {
-            const one = await this.model.findByIdAndDelete(pid)
+            const one = await this.model.finOneAndDelete({_id: id})
             return one 
         } catch (error) {
             return  error
