@@ -1,14 +1,13 @@
-import usersManager from "../data/fs/users.fs.js"
 import jwt from 'jsonwebtoken';
 import usersMongoManager from "../data/mongo/managers/user.manager.js";
 import Controller from "./controller.js";
 
-const usersController = new Controller(usersManager, "USER")
+const usersController = new Controller(usersMongoManager, "USER")
 const { create, readAll, read,  update, destroy} = usersController;
 
 const registerView = async (req, res, next) => {
     try {
-        const users = await usersManager.read()
+        const users = await usersMongoManager.read()
         return res.render("register", { users })
     } catch (error) {
         return next(error)
@@ -38,7 +37,7 @@ async function login(req, res) {
 
     const user = await usersMongoManager.readByEmail(email);
     if (!user || password !== user.password) {
-        return res.status(401).json({ success: false, message: 'Wrong credentials' });
+        return res.status(401).json({ success: false, message: 'WWONG CREDENTIALS' });
     }
 
     const payload = {
@@ -53,13 +52,13 @@ async function login(req, res) {
         maxAge: 3600000,
     });
 
-    res.json({ success: true, message: 'Auth successful' });
+    res.json({ success: true, message: 'ATH SUCCESSFUL' });
 }
 
 async function logout(req, res) {
     res.clearCookie('token', { path: '/' });
 
-    res.status(200).json({ message: 'Session ended' });
+    res.status(200).json({ message: 'SESSION ENDED' });
 }
 
 async function getUserId(req, res) {
@@ -72,10 +71,10 @@ async function getUserId(req, res) {
 
             res.status(200).json({ userId: decoded.id });
         } catch (error) {
-            res.status(401).json({ message: 'Token not available' });
+            res.status(401).json({ message: 'TOKEN NOT AVAILABLE' });
         }
     } else {
-        res.status(401).json({ message: 'Unauthorized' });
+        res.status(401).json({ message: 'UNAUTHORIZED' });
     }
 }
 

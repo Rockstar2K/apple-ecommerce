@@ -20,7 +20,7 @@ class Controller{
         try {
             const filter = req.query;
             const response = await this.manager.readAll(filter)
-            if (response) {
+            if (response.lenght > 0) {
                 return res.status(200).json({ message: this.model + "READ", response })
             } else {
                 const error = new Error(this.model + "NOT FOUND");
@@ -36,7 +36,7 @@ class Controller{
     async read(req, res, next) {
         try {
             const {id} = req.params;
-            const response = await this.manager.readOne(id)
+            const response = await this.manager.read(id)
             if (response) {
                 return res.status(200).json({ message: this.model + "READ", response })
             } else {

@@ -1,5 +1,6 @@
 import { Schema, Types, model } from "mongoose";
- 
+import mongoosePaginator from "mongoose-paginate-v2"
+
 //every product that the user adds to the cart generates a cart document with price, user, quantity data
 const collection = "carts";
 const schema = new Schema({
@@ -43,6 +44,8 @@ schema.pre(
         this.populate("product_id", "title photo category")
     }
 )
+
+schema.plugin(mongoosePaginator)
 
 const Cart = model(collection, schema)
 export default Cart
